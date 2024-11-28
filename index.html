@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Completo de Desarrollo Full-Stack UDECATALUÑA</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        line-height: 1.6;
+        color: #333;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      header {
+        background-color: #d35c5c;
+        color: #fffcd8;
+        text-align: left;
+        padding: 100px 30px 30px 30px;
+      }
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .lista {
+        list-style-type: disclosure-closed;
+        margin-left: 70px;
+        font-size: 20px;
+        text-align: left;
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: #ff6b00;
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+      .cta-button:hover {
+        background-color: #ff8c33;
+      }
+      .features {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0;
+        background-color: #f4f4f4;
+      }
+      .feature {
+        text-align: center;
+        max-width: 300px;
+        padding: 20px;
+      }
+      .feature img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+      }
+      .curriculum {
+        padding: 50px 0;
+      }
+      .curriculum h2 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .curriculum-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .curriculum-item {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .pricing {
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 50px 0;
+      }
+      .price-card {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 30px;
+        max-width: 400px;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      .testimonials {
+        padding: 50px 0;
+        background-color: #fff;
+      }
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .testimonial {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      footer {
+        background-color: #ff6b00;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+      #inscriptionForm {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #f4f4f4;
+        padding: 30px;
+        border-radius: 10px;
+      }
+      #inscriptionForm input,
+      #inscriptionForm textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      @media (max-width: 768px) {
+        .features,
+        .curriculum-grid,
+        .testimonial-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Domina Desarrollo Full-Stack desde Cero en Ucataluña</h1>
+        <p>
+          Conviértete en un desarrollador web completo con nuestro curso
+          intensivo
+        </p>
+        <a href="#inscripcion" class="cta-button">¡Inscríbete Ahora!</a>
+      </div>
+    </header>
+
+    <section class="features container">
+      <div class="feature">
+        <img src="/api/placeholder/100/100" alt="Código" />
+        <h3>Aprende de Todo</h3>
+        <p>
+          Desde frontend con HTML, CSS y JavaScript hasta backend con Node.js
+        </p>
+      </div>
+      <div class="feature">
+        <img src="/api/placeholder/100/100" alt="Proyectos" />
+        <h3>Proyectos Reales</h3>
+        <p>Desarrolla proyectos prácticos que mejorarán tu portafolio</p>
+      </div>
+      <div class="feature">
+        <img src="/api/placeholder/100/100" alt="Mentor" />
+        <h3>Mentoría Personalizada</h3>
+        <p>Clases en vivo y soporte directo de expertos</p>
+      </div>
+    </section>
+
+    <section class="curriculum container">
+      <h2>Temario Completo</h2>
+      <div class="curriculum-grid">
+        <div class="curriculum-item">
+          <h3>Fundamentos Web</h3>
+          <p>HTML5, CSS3, Responsive Design</p>
+        </div>
+        <div class="curriculum-item">
+          <h3>JavaScript Moderno</h3>
+          <p>ES6+, Manipulación del DOM, Eventos</p>
+        </div>
+        <div class="curriculum-item">
+          <h3>Backend con Node.js</h3>
+          <p>Express, APIs RESTful, Bases de Datos</p>
+        </div>
+        <div class="curriculum-item">
+          <h3>Bases de Datos</h3>
+          <p>MongoDB, MySQL, Modelado de Datos</p>
+        </div>
+        <div class="curriculum-item">
+          <h3>Control de Versiones</h3>
+          <p>Git, GitHub, Trabajo Colaborativo</p>
+        </div>
+        <div class="curriculum-item">
+          <h3>Despliegue</h3>
+          <p>Heroku, Netlify, Infraestructura Web</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing container">
+      <div class="price-card">
+        <h2>Precio Especial de Lanzamiento</h2>
+        <p style="font-size: 2rem; color: #ff6b00; margin: 20px 0">$299 USD</p>
+        <p>Incluye:</p>
+        <ul class="lista">
+          <li>100 horas de contenido</li>
+          <li>Acceso por 6 meses</li>
+          <li>Certificado de finalización</li>
+          <li>Soporte en grupo</li>
+        </ul>
+        <a href="#inscripcion" class="cta-button" style="margin-top: 20px"
+          >Reserva Tu Cupo</a
+        >
+      </div>
+    </section>
+    <section class="pricing container">
+      <div class="price-card">
+        <h2>Precio Especial de Lanzamiento</h2>
+        <p style="font-size: 2rem; color: #ff6b00; margin: 20px 0">$299 USD</p>
+        <p>Incluye:</p>
+        <ul class="lista">
+          <li>100 horas de contenido</li>
+          <li>Acceso por 6 meses</li>
+          <li>Certificado de finalización</li>
+          <li>Soporte en grupo</li>
+        </ul>
+        <a href="#inscripcion" class="cta-button" style="margin-top: 20px"
+          >Reserva Tu Cupo</a
+        >
+      </div>
+    </section>
+
+    <section class="testimonials container">
+      <h2 style="text-align: center; margin-bottom: 30px">
+        Lo Que Dicen Nuestros Estudiantes
+      </h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>
+            "Pasé de no saber nada de programación a conseguir mi primer trabajo
+            en 6 meses"
+          </p>
+          <strong>- María Rodríguez</strong>
+        </div>
+        <div class="testimonial">
+          <p>
+            "Los proyectos prácticos me ayudaron a entender realmente cómo se
+            desarrolla software"
+          </p>
+          <strong>- Carlos Méndez</strong>
+        </div>
+        <div class="testimonial">
+          <p>"Un curso completo y bien estructurado. Lo recomiendo 100%"</p>
+          <strong>- Ana Gómez</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="inscripcion" class="container">
+      <form id="inscriptionForm">
+        <h2>¡Reserva Tu Cupo!</h2>
+        <input type="text" placeholder="Nombre Completo" required />
+        <input type="email" placeholder="Correo Electrónico" required />
+        <input type="tel" placeholder="Teléfono (Opcional)" />
+        <textarea
+          placeholder="Cuéntanos por qué quieres aprender desarrollo web"
+          rows="4"
+        ></textarea>
+        <button type="submit" class="cta-button">Inscribirme</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        © 2024 Curso Full-Stack para Principiantes. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("inscriptionForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert(
+            "¡Gracias por tu interés! Pronto nos pondremos en contacto contigo."
+          );
+        });
+    </script>
+  </body>
+</html>
